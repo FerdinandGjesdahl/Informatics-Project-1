@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.container {
+    display: flex;
+  }
+  
+main {
+    width:100%;
+    padding:20px;
+}
+
+.sidebar {
+    background-color: darkslategray;
+    color: #FFFFFF;
+    height:100vh;
+}
+
+.topSection {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.appLogo {
+    color: #FFFFF0;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.appLogo img {
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.appLogo:hover {
+    Color: #3DC0B8;
+}
+
+.navLogo {
+    font-size: 35px;
+}
+
+.navLogo:hover {
+    color: #3DC0B8;
+}
+
+.navLink {
+    display:flex;
+    color: #FFFFF0;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.navLink:hover {
+    background-color: #3DC0B8;
+    color: white;
+}
+

@@ -1,0 +1,78 @@
+.WorkoutContainer {
+    background-color: #ffffff;
+    max-width: 600px;
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  input,
+  textarea {
+    width: 100%; /* Make input fields expand to the container's width */
+    margin: 5px 0;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 5px; /* Add padding for better spacing */
+    box-sizing: border-box; /* Include padding in the width */
+  }
+  
+  h1 {
+    color: #3dc0b8;
+    font-family: 'Moul';
+    font-weight: bold;
+    font-size: 35px;
+    margin: 10px 0;
+  }
+  
+  button {
+    background-color: #3dc0b8;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Courier New';
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  .button-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #startWorkoutButton,
+  #saveWorkoutButton {
+    background-color: #3dc0b8;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Courier New';
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    align-self: stretch; /* Ensure buttons take full width and stack vertically */
+  }
+  .WorkoutExercisePlan {
+  }
+  .exercise-input {
+    width: 100%;
+    margin: 5px 0;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 5px;
+    box-sizing: border-box;
+  }

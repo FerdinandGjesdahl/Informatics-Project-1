@@ -1,0 +1,45 @@
+syntax="proto3";
+
+package elevatu;
+
+option java_package = "itp.gr23.elevatu.protos";
+option java_multiple_files = false;
+option java_outer_classname = "ElevatUNetworkProtos";
+
+import "elevatu_objects.proto";
+
+message UserList{
+  repeated User users = 1;
+}
+
+message WorkoutPlanList{
+  repeated WorkoutPlan workoutPlans = 1;
+}
+
+message ExerciseList{
+  repeated Exercise exercises = 1;
+}
+
+message WorkoutLogList{
+  repeated WorkoutLog workoutLogs = 1;
+}
+
+message UserSession{
+  string username = 1;
+  string secret = 2;
+}
+
+message ExerciseAddRequest {
+  UserSession userSession = 1;
+  Exercise exercise = 2;
+}
+
+message WorkoutPlanAddRequest {
+  UserSession userSession = 1;
+  WorkoutPlan workoutPlan = 2;
+}
+
+message WorkoutLogAddRequest {
+  UserSession userSession = 1;
+  WorkoutLog workoutLog = 2;
+}

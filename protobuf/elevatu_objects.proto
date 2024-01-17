@@ -1,0 +1,49 @@
+syntax="proto3";
+
+package elevatu;
+
+option java_package = "itp.gr23.elevatu.protos";
+option java_multiple_files = false;
+option java_outer_classname = "ElevatUProtos";
+
+import "google/protobuf/timestamp.proto";
+
+message User{
+  string username = 1;
+  string passwordHash = 2;
+  string passwordSalt = 3;
+}
+
+message Exercise{
+  int32 id = 1;
+  string owner = 2;
+  string name = 3;
+  string notes = 4;
+}
+
+message WorkoutLogSet{
+  Exercise exercise = 1;
+  float weight = 2;
+  int32 reps = 3;
+}
+
+message WorkoutPlanExercise{
+  Exercise exercise = 1;
+  int32 reps = 2;
+  int32 sets = 3;
+}
+
+message WorkoutPlan{
+  int32 id = 1;
+  string owner = 2;
+  string name = 3;
+  string notes = 4;
+  repeated WorkoutPlanExercise exerciseList = 5;
+}
+
+message WorkoutLog{
+  int32 id = 1;
+  string owner = 2;
+  google.protobuf.Timestamp date = 3;
+  repeated WorkoutLogSet performedSets = 4;
+}

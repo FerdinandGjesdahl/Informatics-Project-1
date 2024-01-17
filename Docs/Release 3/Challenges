@@ -1,0 +1,13 @@
+1: 
+We had issues connecting the frontend with the backend in the log page. Our strategy in the development of the web application was dividing up our team, some which worked on the backend and others which worked on the frontend part of the application. 
+
+The cause of the problem was rooted in the usage of protobuf for communication between the frontend and backend. Unfortunately, many in the team had little or no experience working with protobuff this caused bottlenecks, and problems for the group because the size of the project demanded that everyone had to implement protobuff for communication and had to do so efficiently to reach the deadline. Although we were able to get most of the pages to work as intended, we were not able to finish the log page before the deadline because of time restraints. 
+
+Also shift we made from JavaFX to React, although a strategic decision to create a more visually appealing frontend, was time consuming and caused a lot of time to be spent implementing pages that had already been built, and that already had a functional backend before. 
+
+What we learned from this process was that the teams should work more closely together on different issues and utilize more pair programming to better help each other out, provide mutual support and facilitate knowledge transfer, especially when team members face challenges.
+
+2:
+In the last release we also had problems with eclipse that we are not sure why. Without changing the devfile eclipse was not opening the workspace correctly even though it did it in the last release.
+
+When we found this out, we have been trying to change the devfile in various ways but without success. This is one of our biggest failures as being able to open in eclipse is the main method of grading the assignment and for the group to be able to use the same version of java. 

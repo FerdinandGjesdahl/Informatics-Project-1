@@ -1,0 +1,29 @@
+title ElevatU Sequence Diagram - Workouts
+
+actor User
+User->webservice.WorkoutRESTController:Create workout
+
+webservice.WorkoutRESTController->api.UserManager:Validates session
+api.UserManager->webservice.WorkoutRESTController:Session status
+webservice.WorkoutRESTController-->User:(if session incorrect) 403 Forbidden
+webservice.WorkoutRESTController->api.WorkoutManager:Adds workout to workout list
+api.WorkoutManager->api.JSONStorageController:Saves to workouts.json
+api.WorkoutManager->webservice.WorkoutRESTController:Returns workout with correct id
+webservice.WorkoutRESTController->User:Returns workout with correct id
+
+
+User-#green>webservice.WorkoutRESTController:Get all workouts for {username}
+webservice.WorkoutRESTController-#green>api.UserManager:Validates session
+api.UserManager-#green>webservice.WorkoutRESTController:Session status
+webservice.WorkoutRESTController--#green>User:(if session incorrect) 403 Forbidden
+webservice.WorkoutRESTController-#green>api.WorkoutManager:Query workouts for username
+api.WorkoutManager-#green>webservice.WorkoutRESTController:Gets all workouts
+webservice.WorkoutRESTController-#green>User:Returns all workouts
+
+User-#blue>webservice.WorkoutRESTController:Get workout by {id}
+webservice.WorkoutRESTController-#blue>api.UserManager:Validates session
+api.UserManager-#blue>webservice.WorkoutRESTController:Session status
+webservice.WorkoutRESTController--#blue>User:(if session incorrect) 403 Forbidden
+webservice.WorkoutRESTController-#blue>api.WorkoutManager:Query workouts for username
+api.WorkoutManager-#blue>webservice.WorkoutRESTController:Gets all workouts
+webservice.WorkoutRESTController-#blue>User:Returns all workouts

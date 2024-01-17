@@ -1,0 +1,147 @@
+.login-container {
+  background-color: #FFFFFF;
+  width: 1400px;
+  height: 1000px;
+  position: relative;
+  font-family: 'Verdana';
+}
+
+.login-header {
+  font-size: 60px;
+  color: #3DC0B8;
+  text-align: center;
+  padding: 20px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  -webkit-text-stroke: 1px black; /* For webkit-based browsers */
+  text-stroke: 1px black;
+}
+
+.connect {
+  background-color: darkslategray;
+  font-size: 14px;
+  margin: 10px;
+}
+
+.login-paragraph {
+  margin: 40px 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.login-button {
+  background-color: darkslategray;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin: 10px auto;
+  display: block;
+  border-radius: 25%;
+  padding: 10px 20px;
+  color: white;
+}
+
+.login-image {
+  display: block;
+  margin: 20px auto;
+  width: 300px;
+  height: 250px;
+}
+
+/* Container for the entire login */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This will center-align all child elements */
+}
+
+/* Styles for label + input container */
+.input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: right; /* Aligns the input and label centrally */
+  margin-bottom: 10px; /* Adds some space between the input fields */
+  margin-top: 10px;
+}
+
+.server-connection {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.login-label {
+  font-size:14px;
+  align-items: center;
+  color: #000000;
+  margin-bottom: 5px; /* Adds some space between the label and the input box */
+}
+
+/* Styles for the input boxes */
+.login-input {
+  align-items: center;
+  width: 130px;
+  height: 25px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/* Specific styles for buttons */
+.login-register-button {
+  display:flex;
+  align-items: row;
+  width: 130px;
+  height: 40px;
+  margin: 5px; /* Adds space around buttons if needed */
+}
+
+.login-login-button {
+  display:flex;
+  align-items: row;
+  width: 80px;
+  height: 40px;
+  margin: 5px; /* Adds space around buttons if needed */
+}
+
+.username-display {
+  position: absolute; /* eller 'fixed' hvis det skal være i høyre hjørne uavhengig av scrolling */
+  top: 0;
+  right: 10%;
+  font-size: larger;
+  font-style: italic;
+  
+}
+
+.server-label {
+  font-size:14px;
+  align-items: left;
+  color: #000000;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+
+.server-input {
+  width: 130px;
+  height: 25px;
+  display: block;
+  margin-right: 5px;
+  margin-top:15px;
+  margin-bottom: 25px;
+}
+.port-label {
+  font-size:14px; 
+  align-items: left;
+  color: #000000;
+  margin-left:5px;
+  margin-bottom: 25px;
+}
+
+.port-input {
+  align-items: left;
+  width: 75px;
+  height: 25px;
+  display: block;
+  margin-left: 5px;
+  margin-top:15px;
+  margin-bottom:20px;
+}

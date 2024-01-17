@@ -1,0 +1,83 @@
+{
+  "name": "elevatu-web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.1",
+    "bootstrap": "^5.3.2",
+    "google-protobuf": "^3.21.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
+    "react-router-dom": "^6.17.0",
+    "react-scripts": "5.0.1",
+    "universal-cookie": "^6.1.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "plugins": [
+      "import",
+      "react",
+      "react-hooks",
+      "jsx-a11y"
+    ],
+    "rules": {
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "import/order": [
+        "error",
+        {
+          "groups": [
+            "builtin",
+            "external",
+            "internal",
+            [
+              "parent",
+              "sibling",
+              "index"
+            ]
+          ],
+          "newlines-between": "always"
+        }
+      ],
+      "require-jsdoc": [
+        "error",
+        {
+          "require": {
+            "FunctionDeclaration": true,
+            "MethodDefinition": true,
+            "ClassDeclaration": true
+          }
+        }
+      ],
+      "valid-jsdoc": "error"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.4"
+  }
+}

@@ -1,0 +1,55 @@
+.exercise-container {
+    background-color: #ffffff;
+    max-width: 600px;
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .exercise-label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .exercise-input,
+  .exercise-textarea {
+    width: 100%;
+    margin: 5px 0;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  .exercise-h1 {
+    color: #3dc0b8;
+    font-family: 'Moul';
+    font-weight: bold;
+    font-size: 35px;
+    margin: 10px 0;
+  }
+  
+  .exercise-button {
+    background-color: #3dc0b8;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Courier New';
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  /* Style for the home button */
+  #homeButton {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }

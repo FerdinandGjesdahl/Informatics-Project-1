@@ -1,0 +1,23 @@
+title ElevatU Sequence Diagram - User
+
+actor User
+
+User->webservice.UserRESTController:Register user
+webservice.UserRESTController->api.UserController:Try to register user
+api.UserController-#red>webservice.UserRESTController:User already exists
+webservice.UserRESTController-#red>User:409 Conflict (User already exists)
+
+api.UserController-#green>api.JSONStorageController:Save users
+api.UserController-#green>webservice.UserRESTController:User registered successfully
+webservice.UserRESTController-#green>User:"User created"
+
+
+User->webservice.UserRESTController:Login user
+webservice.UserRESTController->api.UserController:Check credentials
+api.UserController-#red>webservice.UserRESTController:Credentials wrong
+webservice.UserRESTController-#red>User:403 Forbidden
+
+api.UserController-#green>webservice.UserRESTController:Credentials correct
+webservice.UserRESTController-#green>api.UserController:Create new session
+api.UserController-#green>webservice.UserRESTController:New session
+webservice.UserRESTController-#green>User:Correct, new session
